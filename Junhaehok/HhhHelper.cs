@@ -50,11 +50,12 @@ namespace Junhaehok
         public static Packet BytesToPacket(byte[] bytes)
         {
             byte[] headerBytes = new byte[HEADER_SIZE];
-            byte[] dataBytes = new byte[bytes.Length - HEADER_SIZE];
             Array.Copy(bytes, 0, headerBytes, 0, headerBytes.Length);
+            Header header = BytesToHeader(headerBytes);
+
+            byte[] dataBytes = new byte[header.size];
             Array.Copy(bytes, HEADER_SIZE, dataBytes, 0, dataBytes.Length);
 
-            Header header = BytesToHeader(headerBytes);
             Packet packet = new Packet(header, dataBytes);
 
             return packet;
