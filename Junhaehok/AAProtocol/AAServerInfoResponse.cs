@@ -8,6 +8,7 @@ namespace Junhaehok
 {
     public struct AAServerInfoResponse
     {
+        public bool alive;
         public int roomCount;
         public int userCount;
     }

@@ -89,7 +89,7 @@ namespace Junhaehok
             public const ushort DELETE_USER_FAIL = 115;
             public const ushort UPDATE_USER = 120;
             public const ushort UPDATE_USER_SUCCESS = 122;
-            public const ushort UPDATE_USER_USER_FAIL = 125;
+            public const ushort UPDATE_USER_FAIL = 125;
 
             public const ushort SIGNIN = 200;
             public const ushort SIGNIN_SUCCESS = 202;
@@ -190,7 +190,7 @@ namespace Junhaehok
                     return "UPDATE_USER";
                 case Code.UPDATE_USER_SUCCESS:
                     return "UPDATE_USER_SUCCESS";
-                case Code.UPDATE_USER_USER_FAIL:
+                case Code.UPDATE_USER_FAIL:
                     return "UPDATE_USER_USER_FAIL";
                 case Code.SIGNIN:
                     return "SIGNIN";
@@ -276,6 +276,38 @@ namespace Junhaehok
                     return "ADVERTISE_SUCCESS";
                 case Code.ADVERTISE_FAIL:
                     return "ADVERTISE_FAIL";
+                case Code.SERVER_START:
+                    return "SERVER_START";
+                case Code.SERVER_START_SUCCESS:
+                    return "SERVER_START_SUCCESS";
+                case Code.SERVER_START_FAIL:
+                    return "SERVER_START_FAIL";
+                case Code.SERVER_RESTART:
+                    return "SERVER_RESTART";
+                case Code.SERVER_RESTART_SUCCESS:
+                    return "SERVER_RESTART_SUCCESS";
+                case Code.SERVER_RESTART_FAIL:
+                    return "SERVER_RESTART_FAIL";
+                case Code.SERVER_STOP:
+                    return "SERVER_STOP";
+                case Code.SERVER_STOP_SUCCESS:
+                    return "SERVER_STOP_SUCCESS";
+                case Code.SERVER_STOP_FAIL:
+                    return "SERVER_STOP_FAIL";
+
+                case Code.SERVER_INFO:
+                    return "SERVER_INFO";
+                case Code.SERVER_INFO_SUCCESS:
+                    return "SERVER_INFO_SUCCESS";
+                case Code.SERVER_INFO_FAIL:
+                    return "SERVER_INFO_FAIL";
+
+                case Code.RANKINGS:
+                    return "RANKINGS";
+                case Code.RANKINGS_SUCCESS:
+                    return "RANKINGS_SUCCESS";
+                case Code.RANKINGS_FAIL:
+                    return "RANKINGS_FAIL";
                 default:
                     return "Unknown";
             }

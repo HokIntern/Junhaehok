@@ -17,14 +17,10 @@ namespace Junhaehok
 
     public struct FBDeleteUserRequest
     {
-        [MarshalAs(UnmanagedType.ByValArray, SizeConst = 64)]
-        public char[] cookie;
     }
 
     public struct FBUpdateUserRequest
     {
-        [MarshalAs(UnmanagedType.ByValArray, SizeConst = 64)]
-        public char[] cookie;
         [MarshalAs(UnmanagedType.ByValArray, SizeConst = 18)]
         public char[] password;
     }
