@@ -48,6 +48,7 @@
     <Compile Include="CFProtocol\CFChat.cs" />
     <Compile Include="CFProtocol\CFInitializeRequest.cs" />
     <Compile Include="CFProtocol\CFInitializeResponse.cs" />
+    <Compile Include="CFProtocol\CFRankingResponse.cs" />
     <Compile Include="CFProtocol\CFRoomRequest.cs" />
     <Compile Include="CFProtocol\CFRoomResponse.cs" />
     <Compile Include="FBProtocol\FBAccountRequest.cs" />
